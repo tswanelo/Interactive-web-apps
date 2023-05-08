@@ -1,13 +1,10 @@
 const date= 2050
 const status= 'student'
-let count = 0
+let count = 0  // I removed the const count then added let count.
 
-
-
-
-if (date === 2050) {
+if (date === 2050) { // I added === equal sign
 	
-	count = (count + 5)
+	count = (count + 5) // 
 
 	console.log(date,"January", 'New Year’s Day') 
 	console.log(date,"March", 'Human Rights Day')
