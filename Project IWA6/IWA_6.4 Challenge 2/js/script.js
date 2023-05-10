@@ -30,6 +30,6 @@ if (hourOfDay == 00 && minuteOfDay == 00)  {
 	  console.log(balance.toFixed(2))  // I console the Balance.
 	  
 
-
+	  
 
 	
