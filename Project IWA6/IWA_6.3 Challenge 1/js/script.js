@@ -1,9 +1,9 @@
-const primaryPhone = 'O748105141'
-const secondaryPhone = '0219131568'
+const primaryPhone = '0748105141'
+const secondaryPhone = '02191E1568'
 
  // Only change below this line
 const primaryValid = typeof number == primaryPhone 
-const secondaryValid = typeof number !== secondaryPhone // I added not eaqual
+const secondaryValid = typeof number === secondaryPhone // I added not eaqual
 
 
 console.log('Primary phone is valid numerical string:', primaryValid)

@@ -10,7 +10,7 @@ const minuteOfDay = 00;
 
 if (hourOfDay == 00 && minuteOfDay == 00)  {
 
-	hourOfDay && minuteOfDay !== null
+	hourOfDay && minuteOfDay !== null 
 
 	  }else{
 
