@@ -1,40 +1,42 @@
-
 // script.js
 
-const root1 = document.querySelectorAll(order1)
-   const biscuits1 = document.querySelector(biscuits),
-   const donuts1 = document.querySelector(donuts),
-   const pancakes1 = document.querySelector(pancakes),
-   const status1 =  document.querySelector(status)
+const root1 = document.querySelector('[data-key = "order1"]')
+const biscuits1 = document.querySelector('[class="biscuits"]')
+const donuts1 = document.querySelector('[class = "donuts"]')
+const pancakes1 = document.querySelector('[class = "pancakes"]')
+const status1 = document.querySelector('[class="count"]')
 
-   biscuits1.textContent = order1.getAtribute =('Data - biscuits');
-donuts1.textContent = order1.getAtribute =('Data - donuts');
-pancakes1.textContent = order1.getAtribute =('Data - pancakes');
-status1.textContent = order1.getAtribute =('Data - delivered ') === 'true' ? 'Delivered';
+const root2 = document.querySelector('[data-key = "order2"]')
+const biscuits2 = document.querySelector('[class="biscuits"]')
+const donuts2 = document.querySelector('[class = "donuts"]')
+const pancakes2 = document.querySelector('[class = "pancakes"]')
+const status2 = document.querySelector('[class="count"]')
 
-
-const root2 = document.querySelectorAll(order2),
-const biscuits2 = document.querySelector(biscuits),
-  const donuts2 =  document.querySelector(donuts),
-    const pancakes2 = document.querySelector(pancakes),
-    const status2 = document.querySelector(status)
-
-
-    biscuits2.textContent = order2.getAtribute =('Data - biscuits');
-donuts2.textContent = order2.getAtribute =('Data - donuts');
-pancakes2.textContent = order2.getAtribute =('Data - pancakes');
-status2.textContent = order2.getAtribute =('Data - delivered ') === 'true' ? 'Delivered';
+const root3 = document.querySelector('[data-key = "order3"]')
+const biscuits3 = document.querySelector('[class="biscuits"]')
+const donuts3 = document.querySelector('[class = "donuts"]')
+const pancakes3 = document.querySelector('[class = "pancakes"]')
+const status3 = document.querySelector('[class="count"]')
 
 
-const root3 = document.querySelector(order3)
-  const biscuits3 =  document.querySelector(biscuits),
-   const donuts3 = document.querySelector(donuts),
-   const pancakes3 = document.querySelector(pancakes),
-  const status3 = document.querySelector(status)
 
 
-biscuits3.textContent = order3.getAtribute =('Data - biscuits');
-donuts3.textContent = order3.getAtribute =('Data - donuts');
-pancakes3.textContent = order3.getAtribute =('Data - pancakes');
-status3.textContent = order3.getAtribute =('Data - delivered ') === 'false' ? 'Delivered';
+biscuits1.text = root1.getAttribute("10")
+donuts1.text = root1.getAttribute("13")
+pancakes1.text = root1.getAttribute("0")
+status1.text = root1.getAttribute("true") 
+
+
+biscuits2.text = root2.getAttribute("5")
+donuts2.text = root2.getAttribute("0")
+pancakes2.text = root2.getAttribute("2")
+status2.text = root2.getAttribute("false") 
+
+
+biscuits3.text = root3.getAttribute("12")
+donuts3.text = root3.getAttribute("11")
+pancakes3.text = root3.getAttribute("15")
+status3.text = root3.getAttribute("true") 
+
+console.log(root1,root2,root3)
 
