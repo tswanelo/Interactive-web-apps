@@ -57,12 +57,10 @@ console.log(holidays.futureId || `ID ${futureId} not created yet`)
 
 let copied = {...christmas}
 copied.name = 'X-mas'
-console.log(copied)
 
 let correctDate = new Date("2023-12-25")
 correctDate.setHours(0)
 correctDate.setMinutes(0)
-
 
 
 let isEarlier = correctDate < holidays[6].date
@@ -117,5 +115,6 @@ console.log(`${lastDay}/${lastMonth}/${currentYear}`);
 
 
 
-const randomHoliday = Math.random()
+const randomHoliday = holidays[Math.floor(Math.random()* 9)];
 console.log(randomHoliday)
+
