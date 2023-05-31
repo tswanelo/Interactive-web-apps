@@ -1,42 +1,39 @@
 // script.js
 
-const root1 = document.querySelector('[data-key = "order1"]')
-const biscuits1 = document.querySelector('[class="biscuits"]')
-const donuts1 = document.querySelector('[class = "donuts"]')
-const pancakes1 = document.querySelector('[class = "pancakes"]')
-const status1 = document.querySelector('[class="count"]')
-
-const root2 = document.querySelector('[data-key = "order2"]')
-const biscuits2 = document.querySelector('[class="biscuits"]')
-const donuts2 = document.querySelector('[class = "donuts"]')
-const pancakes2 = document.querySelector('[class = "pancakes"]')
-const status2 = document.querySelector('[class="count"]')
-
-const root3 = document.querySelector('[data-key = "order3"]')
-const biscuits3 = document.querySelector('[class="biscuits"]')
-const donuts3 = document.querySelector('[class = "donuts"]')
-const pancakes3 = document.querySelector('[class = "pancakes"]')
-const status3 = document.querySelector('[class="count"]')
+const order1 = document.querySelector('[data-key = "order1"]');
+const order2 = document.querySelector('[data-key = "order2"]');
+const order3 = document.querySelector('[data-key = "order3"]');
 
 
+const biscuits1 = order1.querySelector('.biscuits .count');
+const donuts1 = order1.querySelector('.donuts .count');
+const pancakes1 = order1.querySelector('.pancakes .count')
+const status1 = order1.querySelector('.status dd');
+
+const biscuits2 = order2.querySelector('.biscuits .count');
+const donuts2 = order2.querySelector('.donuts .count');
+const pancakes2 = order2.querySelector('.pancakes .count');
+const status2 = order2.querySelector('.status dd');
+
+const biscuits3 = order3.querySelector('.biscuits .count');
+const donuts3 = order3.querySelector('.donuts .count');
+const pancakes3 = order3.querySelector('.pancakes .count');
+const status3 = order3.querySelector('.status dd');
 
 
-biscuits1.text = root1.getAttribute("10")
-donuts1.text = root1.getAttribute("13")
-pancakes1.text = root1.getAttribute("0")
-status1.text = root1.getAttribute("true") 
 
 
-biscuits2.text = root2.getAttribute("5")
-donuts2.text = root2.getAttribute("0")
-pancakes2.text = root2.getAttribute("2")
-status2.text = root2.getAttribute("false") 
+biscuits1.textContent = order1.getAttribute('data-biscuits');
+donuts1.textContent = order1.getAttribute('data-donuts');
+pancakes1.textContent = order1.getAttribute('data-pancakes');
+status1.textContent = order1.getAttribute('data-delivered') === 'true' ? 'delivered': 'Pending';
 
+biscuits2.textContent = order2.getAttribute('data-biscuits');
+donuts2.textContent = order2.getAttribute('data-donuts');
+pancakes2.textContent = order2.getAttribute('data-pancakes');
+status2.textContent = order2.getAttribute('data-delivered') === 'true' ? 'delivered': 'Pending';
 
-biscuits3.text = root3.getAttribute("12")
-donuts3.text = root3.getAttribute("11")
-pancakes3.text = root3.getAttribute("15")
-status3.text = root3.getAttribute("true") 
-
-console.log(root1,root2,root3)
-
+biscuits3.textContent = order3.getAttribute('data-biscuits');
+donuts3.textContent = order3.getAttribute('data-donuts');
+pancakes3.textContent = order3.getAttribute('data-pancakes');
+status3.textContent = order3.getAttribute('data-delivered') === 'true' ? 'delivered': 'Pending';
