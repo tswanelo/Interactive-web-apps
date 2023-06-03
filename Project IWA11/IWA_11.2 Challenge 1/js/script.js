@@ -31,7 +31,7 @@ status1.textContent = order1.getAttribute('data-delivered') === 'true' ? 'delive
 biscuits2.textContent = order2.getAttribute('data-biscuits');
 donuts2.textContent = order2.getAttribute('data-donuts');
 pancakes2.textContent = order2.getAttribute('data-pancakes');
-status2.textContent = order2.getAttribute('data-delivered') === 'true' ? 'delivered': 'Pending';
+status2.textContent = order2.getAttribute('data-delivered') === 'false' ? 'delivered': 'Pending';
 
 biscuits3.textContent = order3.getAttribute('data-biscuits');
 donuts3.textContent = order3.getAttribute('data-donuts');
