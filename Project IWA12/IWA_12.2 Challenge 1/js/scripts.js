@@ -30,15 +30,15 @@ const STATUS_MAP = {
 // Edit below line 
 
 
-const status1 = book1.querySelector('.status')
-const reserve1 = book1.querySelector('.reserve')
-const checkout1 = book1.querySelector('.checkout')
-const checkin1 = book1.querySelector('.checkin').style.color = "grey";
+const status = book1.querySelector('.status')
+const reserve = book1.querySelector('.reserve')
+const checkout = book1.querySelector('.checkout')
+const checkin = book1.querySelector('.checkin').style.color = "grey";
 
-status1.style.color = STATUS_MAP.overdue.color;
-reserve1.disabled = STATUS_MAP.overdue.canReserve;
-checkout1.disabled = STATUS_MAP.overdue.canCheckout;
-checkin1.disabled = STATUS_MAP.overdue.canCheckIn;
+status.style.color = STATUS_MAP.overdue.color;
+reserve.disabled = STATUS_MAP.overdue.canReserve;
+checkout.disabled = STATUS_MAP.overdue.canCheckout;
+checkin.disabled = STATUS_MAP.overdue.canCheckIn;
 
 
 
