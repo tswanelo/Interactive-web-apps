@@ -1,6 +1,18 @@
 const nickname= "Timmy";
 const firstname = "Timothy";
-const DisplayName = nickname || firstname  // I added displayName.
+// const displayName = nickname || firstname
 
-console.log(`Good Morning, ${DisplayName}`) //I console displayName.
 
+if ( nickname === firstname) {
+
+    console.log('Good Morning!');
+
+} else if (nickname === firstname) {
+
+    console.log('Good Morning!');
+
+} else {
+
+    console.log('Good Morning!');
+
+}
