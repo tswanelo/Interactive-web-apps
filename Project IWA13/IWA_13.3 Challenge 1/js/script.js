@@ -28,11 +28,17 @@ const checkUser = () => {
 
 // Only allowed to change code above
 
-checkUser();
-calcUser();
+checkUser()
+calcUser()
 
-checkUser();
-calcUser();
+checkUser()
+calcUser()
 
-checkUser();
-calcUser();
+checkUser()
+calcUser()
+
+checkUser()
+calcUser()
+
+checkUser()
+calcUser()
