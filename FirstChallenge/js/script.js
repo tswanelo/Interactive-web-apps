@@ -1,13 +1,18 @@
+function Atree(tree) {
+    let star = "*"; 
+    
+    for (let t = 0, j = "*"; t < tree; t++) {
+      console.log(star);
+      
+      star = star + j;
+    }
+    
+  }
 
-const starA = '*'
-const starsB = '**'
-const starsC = '***'
-const starsD = '****'
+  Atree(4);
+
+  
 
 
-console.log(starA)
-console.log(starsB)
-console.log(starsC)
-console.log(starsD)
 
 
