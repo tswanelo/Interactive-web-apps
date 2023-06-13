@@ -9,23 +9,21 @@ const data = {
 }
 
 // Only edit below
-const first = data.lists[0][1]
-const second = data.lists[1][1] 
-const third = data.lists[2][1] 
+const first = data.lists[0][1];
+const second = data.lists[1][1]; 
+const third = data.lists[2][1]; 
 
-const result = [].concat(first,second,third)
+const result = [];
 
 
 const extractBiggest = () => {
 	if (first > second) {
-		return first
-	}
-
-	if (third < 1) {
-		return second
-	}
-	
-	return third
+		return first.pop();
+	  } else if (third < first) {
+		return second.pop();
+	  } else {
+		return third.pop();
+	  }
 }
 
 
