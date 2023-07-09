@@ -45,3 +45,7 @@ const sarah = {
 
 console.log(sarah.name,sarah.age,sarah.AccessId,sarah.balance, sarah['Address'])
 
+
+
+
+
