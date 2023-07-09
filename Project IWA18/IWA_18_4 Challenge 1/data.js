@@ -1,5 +1,3 @@
-import {createOrderHtml, html, updateDraggingHtml, moveToColumn} from './view.js'
-
 /**
  * A pre-defined list of tables IDs to be used in the app. This can be
  * configured before the app is started, and allows the app to be used in
@@ -56,7 +54,7 @@ export const state = {
  * timezones. Therefore two additional random numbers are added to the ID to
  * ensure additional uniqueness.
  */
-const createUniqueId = () => {
+export const createUniqueId = () => {
     const random1 = Math.floor(Math.random() * 10000000000000000)
     const random2 = Math.floor(Math.random() * 10000000000000000)
     const timestamp = new Date().getTime()
