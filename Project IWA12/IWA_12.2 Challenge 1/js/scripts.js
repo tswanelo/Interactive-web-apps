@@ -64,4 +64,16 @@ reserve3.disabled= STATUS_MAP.shelf.canReserve
 checkout3.disabled= STATUS_MAP.shelf.canCheckout
 checkin3.disabled = STATUS_MAP.shelf.canCheckIn
 
+const status4 = book3.querySelector('.status')
+const reserve4 = book3.querySelector('.reserve')
+const checkout4 = book3.querySelector('.checkout')
+const checkin4 = book3.querySelector('.checkin').style.color = "grey";
+
+status4.style.color = STATUS_MAP.checkedOut.color
+reserve4.disabled= STATUS_MAP.checkedOut.canReserve
+checkout4.disabled= STATUS_MAP.checkedOut.canCheckout
+checkin4.disabled = STATUS_MAP.checkedOut.canCheckIn
+
+
+
 
