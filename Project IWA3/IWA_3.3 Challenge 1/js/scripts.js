@@ -1,7 +1,12 @@
  // scripts.js
  
- import {company,year,message} from "./configuration.js" 
- 
- console.log(company,year,message)
+ import { company, year } from './configuration.js';
 
+ 
+document.addEventListener('DOMContentLoaded', function () {
+    const message = '© ' + company + ' (' + year + ')';
+    document.querySelector('footer').innerText = message;
+      
+});
+ 
 

@@ -29,51 +29,43 @@ const STATUS_MAP = {
 
 // Edit below line 
 
+// Update the code to manipulate the buttons and their styles for each book
+const book1 = {
+    status: 'overdue',
+    reserve: document.querySelector('#book1 .reserve'),
+    checkout: document.querySelector('#book1 .checkout'),
+    checkin: document.querySelector('#book1 .checkin'),
+    statusElement: document.querySelector('#book1 .status')
+};
 
-const status1 = book1.querySelector('.status')
-const reserve1 = book1.querySelector('.reserve')
-const checkout1 = book1.querySelector('.checkout')
-const checkin1 = book1.querySelector('.checkin').style.color = "grey";
+book1.statusElement.style.color = STATUS_MAP[book1.status].color;
+book1.reserve.disabled = !STATUS_MAP[book1.status].canReserve;
+book1.checkout.disabled = !STATUS_MAP[book1.status].canCheckout;
+book1.checkin.disabled = !STATUS_MAP[book1.status].canCheckIn;
 
-status1.style.color = STATUS_MAP.overdue.color;
-reserve1.disabled = STATUS_MAP.overdue.canReserve;
-checkout1.disabled = STATUS_MAP.overdue.canCheckout;
-checkin1.disabled = STATUS_MAP.overdue.canCheckIn;
+const book2 = {
+    status: 'reserved',
+    reserve: document.querySelector('#book2 .reserve'),
+    checkout: document.querySelector('#book2 .checkout'),
+    checkin: document.querySelector('#book2 .checkin'),
+    statusElement: document.querySelector('#book2 .status')
+};
 
+book2.statusElement.style.color = STATUS_MAP[book2.status].color;
+book2.reserve.disabled = !STATUS_MAP[book2.status].canReserve;
+book2.checkout.disabled = !STATUS_MAP[book2.status].canCheckout;
+book2.checkin.disabled = !STATUS_MAP[book2.status].canCheckIn;
 
+const book3 = {
+    status: 'shelf',
+    reserve: document.querySelector('#book3 .reserve'),
+    checkout: document.querySelector('#book3 .checkout'),
+    checkin: document.querySelector('#book3 .checkin'),
+    statusElement: document.querySelector('#book3 .status')
+};
 
-const status2 = book2.querySelector('.status')
-const reserve2 = book2.querySelector('.reserve')
-const checkout2 = book2.querySelector('.checkout')
-const checkin2 = book2.querySelector('.checkin').style.color = "grey";
-
-status2.style.color = STATUS_MAP.reserved.color;
-reserve2.disabled = STATUS_MAP.reserved.canReserve;
-checkout2.disabled = STATUS_MAP.reserved.canCheckout;
-checkin2.disabled = STATUS_MAP.reserved.canCheckIn;
-
-
-
-const status3 = book3.querySelector('.status')
-const reserve3 = book3.querySelector('.reserve')
-const checkout3 = book3.querySelector('.checkout')
-const checkin3 = book3.querySelector('.checkin').style.color = "grey";
-
-status3.style.color = STATUS_MAP.shelf.color
-reserve3.disabled= STATUS_MAP.shelf.canReserve
-checkout3.disabled= STATUS_MAP.shelf.canCheckout
-checkin3.disabled = STATUS_MAP.shelf.canCheckIn
-
-const status4 = book3.querySelector('.status')
-const reserve4 = book3.querySelector('.reserve')
-const checkout4 = book3.querySelector('.checkout')
-const checkin4 = book3.querySelector('.checkin').style.color = "grey";
-
-status4.style.color = STATUS_MAP.checkedOut.color
-reserve4.disabled= STATUS_MAP.checkedOut.canReserve
-checkout4.disabled= STATUS_MAP.checkedOut.canCheckout
-checkin4.disabled = STATUS_MAP.checkedOut.canCheckIn
-
-
-
+book3.statusElement.style.color = STATUS_MAP[book3.status].color;
+book3.reserve.disabled = !STATUS_MAP[book3.status].canReserve;
+book3.checkout.disabled = !STATUS_MAP[book3.status].canCheckout;
+book3.checkin.disabled = !STATUS_MAP[book3.status].canCheckIn;
 

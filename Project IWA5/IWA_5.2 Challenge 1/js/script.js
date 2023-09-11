@@ -1,38 +1,38 @@
-const FREE_WARNING = 'Free shipping only applies to single customer orders'
-const BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
-const NONE_SELECTED = 0
+const FREE_WARNING = 'Free shipping only applies to single customer orders';
+const BANNED_WARNING = 'Unfortunately we do not ship to your country of residence';
+const NONE_SELECTED = '0';
 
+let shipping;
+let currency = '';
+let customers = 1; 
+
+const userLocation = 'RSA'; 
+const totalCost = 1270; 
+
+// Define or calculate the variables
 const shoes = 300 * 1;
 const toys = 100 * 5;
-const shirts = 150 * 0;
+const shirts = 150 * NONE_SELECTED; // Use the NONE_SELECTED constant
 const batteries = 35 * 2;
-const pens = 5 * 0;
+const pens = 5 * NONE_SELECTED; // Use the NONE_SELECTED constant
 
-const total = shoes + toys + shirts + batteries + pens
-let shippingCost = null;
-const currency = 'R';
-const customers = 1
-const shipping = null
-
-if (total > 1000){
-  if (location === 'NAM' && customers == 1){
-    if (location === 'RSA'){
-      shippingCost = 0 || calcShipping;
-    }
-
+if (userLocation === 'RSA') {
+  if (customers === 1 && (totalCost >= 1000 || currency === 'R')) {
+    shipping = 0; 
+  } else {
+    shipping = 400; 
   }
-  if (shippingCost === 400 && customers !==1){
-    console.log(FREE_WARNING);
-  }}else{
-    if(location === 'NAM') {
-      shippingCost = 600;
-    }else{
-      shippingCost = 800;
-    }
+} else if (userLocation === 'NAM') {
+  if (customers === 1) {
+    shipping = 600; // Shipping is $600 for NAM customers
+  } else {
+    console.log('WARNING: ' + FREE_WARNING);
   }
+} else if (userLocation === 'NK') {
+  console.log('WARNING: ' + BANNED_WARNING);
+} else {
+  console.log('WARNING: Invalid location');
+  shipping = 800; // Default shipping cost for all other countries
+}
 
-  if (location === 'NK' && shipping === null){console.log(BANNED_WARNING);}
-  const totalCost = total + shippingCost;
-  console.log('Price:' + currency + totalCost);
-
-  
+console.log('Price:', currency, totalCost + shipping);

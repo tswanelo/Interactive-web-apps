@@ -1,38 +1,35 @@
-const date = 2050;
+const year = 2050;
 const status = 'student';
 let count = 0;
 
-if (date === 2050) {
-  count = count + 5;
-
-  console.log(date, "January", 'New Year’s Day');
-  console.log(date, "March", 'Human Rights Day');
-
-  console.log(date, 'April');
-  console.log(date, 'Good Friday');
+if (year === 2050) {
+  console.log("January", 'New Year’s Day');
+  console.log("March", 'Human Rights Day');
+  const date = 'April';
   console.log(date, 'Family Day');
   console.log(date, 'Freedom Day');
+  count += 4;
 
-  function value(student) {
-    count = count + 1;
-    console.log(status, 'June', 'Youth Day');
+  if (status === "student") {
+    console.log('June', 'Youth Day');
+    count += 1;
   }
 
-  count = count + 3;
-  console.log(date, 'August', "Women's Day");
-  console.log(date, 'September', 'Heritage Day');
-  console.log(date, 'December');
-  console.log(date, 'Day of Reconciliation');
+  console.log('August', 'Women’s Day');
+  console.log('September', 'Heritage Day');
+  const decemberDate = 'December';
+  console.log(decemberDate, 'Day of Reconciliation');
+  count += 3;
 
-  function gen(parent) {
-    count = count + 1;
-    console.log(status, 'Christmas Day');
+  if (status === "parent") {
+    console.log(decemberDate, 'Christmas Day');
+    count += 1;
   }
 
-  count = count + 1;
-  console.log(date, 'Day of Goodwill');
-
-  console.log('Your status is:', status);
-  console.log('The year is:', date);
-  console.log('The total number of holidays is:', count);
+  console.log(decemberDate, 'Day of Goodwill');
+  count += 1;
 }
+
+console.log('Your status is:', status);
+console.log('The year is:', year);
+console.log('The total holidays is:', count);
